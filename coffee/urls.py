@@ -13,18 +13,39 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from django.conf.locale import ru
 from django.conf.urls import url
+from django.conf.urls.i18n import i18n_patterns
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 
-import coffeeapp
+import homeBuildSite
 from coffee import settings
-from coffeeapp import views
+from homeBuildSite import views
 
-urlpatterns = [
+
+from django.utils.translation import gettext_lazy as _
+
+# urlpatterns = [
+#     path('admin/', admin.site.urls),
+#
+#
+#     url(r'^', include('homeBuildSite.urls')),
+#     path(r'.*', homeBuildSite.views.error, name="error"),
+# ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+urlpatterns = i18n_patterns(
+    # ...
     path('admin/', admin.site.urls),
+    # ...
+    url(r'^', include('homeBuildSite.urls')),
+#     path(r'.*', homeBuildSite.views.error, name="error"),
 
-    url(r'^', include('coffeeapp.urls')),
-    path(r'.*', coffeeapp.views.error, name="error"),
-] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    # If no prefix is given, use the default language
+    prefix_default_language=False
+) + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+admin.site.index_title = _('My Index Title')
+admin.site.site_header = _('My Site Administration')
+admin.site.site_title = _('My Site Management')

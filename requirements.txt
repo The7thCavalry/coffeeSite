@@ -1,0 +1,13 @@
+asgiref==3.3.0
+Django==3.1.3
+django-appconf==1.0.4
+django-imagekit==4.0.2
+django-jquery==3.1.0
+mysqlclient==2.0.1
+pilkit==2.0
+Pillow==8.0.1
+pytz==2020.4
+six==1.15.0
+sorl-thumbnail==12.3
+sorl-thumbnail-async==0.6.0
+sqlparse==0.4.1

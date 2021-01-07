@@ -1,0 +1,331 @@
+<!--
+
+╔╔╗╔╔╔═╔═  ╔╗╦║║╦╗╦╔╗
+║║║╠╠╠═╠═  ╚╗║║║║║║║║
+╚╚╝║║╚═╚═  ╚╝║╚╝╩╝╩╚╝
+
+www.coffeestudio.ru
+support: web@coffeestudio.ru
+creature: 2020
+
+-->
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1 , viewport-fit=cover">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+
+    <title>Разработка сайтов и Интернет реклама - агентство Интернет-рекламы Coffee Studio</title>
+    <meta name="description"
+          content="Агентство Интернет-рекламы Coffee Studio предлагает полный комплекс услуг по продвижению Вашего бизнеса в Интернет.">
+    <meta name="keywords"
+          content="псков, создание сайтов, интернет реклама, редизайн, раскрутка, продвижение, обслуживание сайтов, администрирование">
+    <link rel="canonical" href="">
+
+    {% load static %}
+
+    <link href="{% static "css/plugins.css" %}" type="text/css" rel="stylesheet">
+    <link href="{% static "css/styles.css" %}" type="text/css" rel="stylesheet">
+
+    <link href="{% static "css/list.css" %}" type="text/css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="{% static "favicon/apple-touch-icon.png" %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static "favicon/favicon-32x32.png" %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static "favicon/favicon-16x16.png" %}">
+    <link rel="manifest" href="{% static "favicon/site.webmanifest" %}">
+    <link rel="mask-icon" href="{% static "favicon/safari-pinned-tab.svg" %}" color="#5bbad5">
+    <link rel="shortcut icon" href="{% static "favicon/favicon.ico" %}">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
+    {% block ceo %}
+        {% include "coffee/basicHeadEntry/ceoEntry.html" %}
+    {% endblock %}
+</head>
+<body class="inner-page">
+<div class="container">
+    <div class="content">
+
+        {% block header %}
+            {% include "coffee/header/header.html" %}
+        {% endblock %}
+
+        <div class="list-page">
+            <ul class="wrapper breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a href="/" class="breadcrumbs__link">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <span class="breadcrumbs__last">Каталог</span>
+                </li>
+            </ul>
+
+            <!-- Данная секция .projects - практически полный копипаст с главной. Отличается только заголовками и модификаторами -->
+            <!-- Здесь добавляется модификатор projects--list -->
+            <section class="projects projects--list">
+                <div class="wrapper projects__wrapper">
+                    <div class="projects-top">
+                        <!-- Здесь добавляется модификатор .header-block--bottom -->
+                        <div class="header-block header-block--bottom">
+                            <h2>Список новостей</h2>
+                            <div class="header-block__text header-block__text--2">Список новостей</div>
+                        </div>
+                        <!-- Ссылка на все проекты убрана -->
+                    </div>
+                    <ul class="projects-items">
+                        <li class="projects-item">
+                            <a href="#0" class="project">
+                                <div class="project-image">
+                                    <picture>
+                                        <source srcset="{% static "images/project-1.webp" %}" type="image/webp">
+                                        <img src="{% static "images/project-1.jpg" %}"
+                                             alt="Реконструкция участка трассы М60">
+                                    </picture>
+                                </div>
+                                <div class="project-overlay"></div>
+                                <h3 class="project-title">Реконструкция участка трассы М60</h3>
+                                <div class="project-hover">
+                                    <div>
+                                        <h3 class="project-hover__title">Реконструкция участка трассы М60</h3>
+                                        <!-- Текст из админки start -->
+                                        <p>Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                                            является стандартной "рыбой"
+                                            для
+                                            текстов на латинице с начала XVI века.</p>
+                                        <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм
+                                            шрифтов, используя
+                                            Lorem
+                                            Ipsum
+                                            для распечатки образцов.</p>
+                                        <!-- Текст из админки end -->
+                                    </div>
+                                    <div class="project-hover__read">
+                                        Читать
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects-item">
+                            <a href="#0" class="project">
+                                <div class="project-image">
+                                    <picture>
+                                        <source srcset="{% static "images/project-2.webp" %}" type="image/webp">
+                                        <img src="{% static "images/project-2.jpg" %}"
+                                             alt="Строительство автомобильной дороги в пгт Бежаницы">
+                                    </picture>
+                                </div>
+                                <div class="project-overlay"></div>
+                                <h3 class="project-title">Строительство автомобильной дороги в пгт Бежаницы</h3>
+                                <div class="project-hover">
+                                    <div>
+                                        <h3 class="project-hover__title">Строительство автомобильной дороги в пгт
+                                            Бежаницы</h3>
+                                        <!-- Текст из админки start -->
+                                        <p>Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                                            является стандартной "рыбой"
+                                            для
+                                            текстов на латинице с начала XVI века.</p>
+                                        <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм
+                                            шрифтов, используя
+                                            Lorem
+                                            Ipsum
+                                            для распечатки образцов.</p>
+                                        <!-- Текст из админки end -->
+                                    </div>
+                                    <div class="project-hover__read">
+                                        Читать
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="projects-item">
+                            <a href="#0" class="project">
+                                <div class="project-image">
+                                    <picture>
+                                        <source srcset="{% static "images/project-3.webp" %}" type="image/webp">
+                                        <img src="{% static "images/project-3.jpg" %}"
+                                             alt="Реконструкция участка трассы М60">
+                                    </picture>
+                                </div>
+                                <div class="project-overlay"></div>
+                                <h3 class="project-title">Реконструкция автомобильной дороги на улице Космонавтов</h3>
+                                <div class="project-hover">
+                                    <div>
+                                        <h3 class="project-hover__title">Реконструкция автомобильной дороги на улице
+                                            Космонавтов</h3>
+                                        <!-- Текст из админки start -->
+                                        <p>Это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum
+                                            является стандартной "рыбой"
+                                            для
+                                            текстов на латинице с начала XVI века.</p>
+                                        <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм
+                                            шрифтов, используя
+                                            Lorem
+                                            Ipsum
+                                            для распечатки образцов.</p>
+                                        <!-- Текст из админки end -->
+                                    </div>
+                                    <div class="project-hover__read">
+                                        Читать
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="projects projects--list">
+                <div class="wrapper projects__wrapper">
+                    <div class="projects-top">
+                        <!-- Здесь добавляется модификатор .header-block--bottom -->
+                        <div class="header-block header-block--bottom">
+                            <h2>Производственная база</h2>
+                            <div class="header-block__text header-block__text--2">Производственная база</div>
+                        </div>
+                        <!-- Ссылка на все проекты убрана -->
+                    </div>
+                    <ul class="projects-items">
+
+                        {% for object in data %}
+                            <li class="projects-item">
+                                <a href="#0" class="project">
+                                    <div class="project-image">
+                                        <picture>
+                                            <source srcset="{{ object.image_thumbnail.url }}" type="image/webp">
+                                            <img src="{{ object.image_thumbnail.url }}"
+                                                 alt="image is not allowed">
+                                        </picture>
+                                    </div>
+                                    <div class="project-overlay"></div>
+                                    <h3 class="project-title">{% comment %}Реконструкция участка трассы М60{% endcomment %}</h3>
+                                    <div class="project-hover">
+                                        <div>
+                                            <h3 class="project-hover__title">{% comment %}Реконструкция участка трассы М60{% endcomment %}</h3>
+                                            <!-- Текст из админки start -->
+                                            <p>  {{ object.text }}{% if not forloop.last %},{% endif %}   </p>
+                                            <!-- Текст из админки end -->
+                                        </div>
+                                        <div class="project-hover__read">
+                                            Читать
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </section>
+
+
+            <ul class="pagination">
+                {% if data.has_previous %}
+                    <li class="pagination-item pagination-item--back">
+                        <a href="?page={{ data.previous_page_number }}" title="Предыдущая страница"
+                           class="pagination-item__button">
+              <span class="icon">
+                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.900321 15.8345C0.797428 15.9448 0.66881 16 0.527331 16C0.385852 16 0.257235 15.9448 0.154341 15.8345C-0.0514469 15.6138 -0.0514469 15.2552 0.154341 15.0345L6.71383 8L0.154341 0.965517C-0.0514469 0.744828 -0.0514469 0.386207 0.154341 0.165517C0.360129 -0.0551724 0.694534 -0.0551724 0.900321 0.165517L7.84566 7.6C8.05145 7.82069 8.05145 8.17931 7.84566 8.4L0.900321 15.8345Z"
+                        fill="white"/>
+                </svg>
+
+              </span>
+                        </a>
+                    </li>
+                    {% comment %}{% else %}
+                    <li class="arrow unavailable"><a href="">&laquo;</a></li>{% endcomment %}
+                {% endif %}
+                {% for page in data.paginator.page_range %}
+                    {% if page == data.number %}
+                        <li class="arrow"><a href="?page={{ page }}" title="Страница {{ page }}"
+                                             class="pagination-item__link">{{ page }}</a></li>
+                    {% else %}
+                        <li><a href="?page={{ page }}"></a></li>
+                    {% endif %}
+                {% endfor %}
+                {% if data.has_next %}
+                    <li class="pagination-item pagination-item--forward">
+                        <a href="?page={{ data.next_page_number }}" title="Следующая страница"
+                           class="pagination-item__button">
+              <span class="icon">
+                <svg width="8" height="16" viewBox="0 0 8 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.900321 15.8345C0.797428 15.9448 0.66881 16 0.527331 16C0.385852 16 0.257235 15.9448 0.154341 15.8345C-0.0514469 15.6138 -0.0514469 15.2552 0.154341 15.0345L6.71383 8L0.154341 0.965517C-0.0514469 0.744828 -0.0514469 0.386207 0.154341 0.165517C0.360129 -0.0551724 0.694534 -0.0551724 0.900321 0.165517L7.84566 7.6C8.05145 7.82069 8.05145 8.17931 7.84566 8.4L0.900321 15.8345Z"
+                        fill="white"/>
+                </svg>
+
+              </span>
+                        </a>
+                    </li>
+                    {% comment %}{% else %}
+                    <li class="arrow unavailable"><a href="">&laquo;</a></li>{% endcomment %}
+                {% endif %}
+            </ul>
+
+        </div>
+
+    </div>
+
+    <div itemscope itemtype="http://schema.org/Organization" hidden>
+        <span itemprop="name">ООО "ДорСтройСервис"</span>
+        <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+            180559, Псковская обл., Псковский р-н, д. Родина, ул. Юбилейная д. 17
+        </div>
+        <span itemprop="telephone">{{ contact.1 }}</span>
+        <span itemprop="email">{{ contact.0 }}</span>
+    </div>
+
+    {% block footer %}
+        {% include "coffee/footer/footer.html" %}
+    {% endblock %}
+
+    <div class="loader">
+        <div class="lds-dual-ring"></div>
+    </div>
+    <!--<noindex>-->
+    <div id="cookie-policy-info" class="cookie-policy" role="alert">
+        <div class="wrapper">
+            <div class="cookie-policy-row">
+                <div class="cookie-policy-text">
+                    Данный сайт использует «cookies» и сведения об устройстве в целях повышения удобства пользования
+                    сайтом. Продолжая работу с сайтом, вы соглашаетесь на обработку указанных выше данных. Подробнее о
+                    порядке обработки данных смотрите здесь. Если вы не хотите использовать файлы «cookies», измените
+                    настройки браузера или покиньте сайт.
+                </div>
+                <div class="cookie-policy-button">
+                    <button class="btn btn--orange btn-cookies" id="cookie-policy-btn" type="button">
+                        <span>Принимаю</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--</noindex>-->
+</div>
+
+{% block contact %}
+    {% include "coffee/contact/contact.html" %}
+{% endblock %}
+<!-- Успешная отправка -->
+<div class="modal mfp-hide" style="display: none;">
+    <div class="modal-success">
+      <span class="img">
+        <img src="{% static "images/modal-success.svg" %}" alt="Ваше сообщение успешно отправлено"
+             title="Ваше сообщение успешно отправлено">
+      </span>
+        <span class="title">Ваше сообщение успешно отправлено</span>
+    </div>
+</div>
+
+<script src="{% static "js/combined.min.js" %}"></script>
+<script src="{% static "js/libs.js" %}"></script>
+
+<div class="counters" hidden>
+    <!--    counters    -->
+</div>
+
+</body>
+</html>
